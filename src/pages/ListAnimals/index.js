@@ -6,9 +6,9 @@ import Background from '../../components/Background';
 
 import Card from './components/Card';
 
-const ListAnimals = () => {
+const ListAnimals = ({ navigation }) => {
   const animals = useSelector((state) => state.register.data);
-  // const data = [1, 2, 3, 4, 5, 6, 7, 8];
+  console.log(navigation);
 
   return (
     <Background>
@@ -18,7 +18,9 @@ const ListAnimals = () => {
         <List
           data={animals}
           keyExtractor={(item) => String(item.id)}
-          renderItem={({ item }) => <Card data={item} />}
+          renderItem={({ item }) => (
+            <Card data={item} navigation={navigation} />
+          )}
         />
       </Container>
     </Background>

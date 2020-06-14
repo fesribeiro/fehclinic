@@ -15,8 +15,6 @@ import {
 
 import { registerAnimal } from '../../store/modules/register/actions';
 
-// import { Container } from './styles';
-
 const Register = ({ navigation }) => {
   const dispatch = useDispatch();
 
