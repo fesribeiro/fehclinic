@@ -1,5 +1,5 @@
 # fehclinic
-Fisrt app with react-native
+FehClinic - animals controls
 
 
 ## Librarys used
